@@ -1,6 +1,8 @@
 #include "GenderClassification.h"
 #include "AgeClassification.h"
-
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/core/core.hpp>
+#include "opencv/cv.hpp"
 using namespace std;
 using namespace cv;
 using namespace caffe;
@@ -79,6 +81,7 @@ void printResult(int _gender, int _age, vector<Dtype> _prob_gender, vector<Dtype
 
 int main(int argc, char* argv[])
 {
+        cout<<argc<<endl;
 	if (argc != 7)
 	{
 		cout << "Command shoud be like ..." << endl;
