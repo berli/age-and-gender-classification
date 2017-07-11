@@ -57,6 +57,6 @@ link_libraries(/usr/local/lib/libdlib.a)
 
 # 查找当前目录下的所有源文件
 # 并将名称保存到 DIR_SRCS 变量
-aux_source_directory(. DIR_SRCS)
+aux_source_directory(./src/ DIR_SRCS)
 add_executable(RememberYou ${DIR_SRCS})
 target_link_libraries (RememberYou  ${OpenCV_LIBS} ${Caffe_LIBRARIES})
